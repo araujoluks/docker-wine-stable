@@ -9,9 +9,9 @@ RUN apt-get -y update && \
 	apt-get -y update && \
 	DEBIAN_FRONTEND=noninteractive apt-get -y install --install-recommends winehq-stable
 
-RUN useradd -m wine
-USER wine
-WORKDIR /home/wine
-ENV HOME /home/wine
+RUN useradd -m container
+USER container
+WORKDIR /home/container
+ENV HOME /home/container
 
 CMD ["/bin/bash"]
