@@ -1,5 +1,5 @@
-FROM buildpack-deps:xenial-curl
-MAINTAINER David Manouchehri
+FROM buildpack-deps:disco-curl
+MAINTAINER Lucas Araujo
 
 RUN apt-get -y update && \
 	DEBIAN_FRONTEND=noninteractive apt-get -y install software-properties-common apt-transport-https && \
